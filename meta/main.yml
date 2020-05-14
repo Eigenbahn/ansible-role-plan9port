@@ -1,0 +1,47 @@
+galaxy_info:
+  author: Jordan Besly
+  description: Install fsv2, a 3D file explorer
+  company:
+
+  license: MIT
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Alpine
+    versions:
+    - all
+  - name: ArchLinux
+    versions:
+    - all
+  - name: opensuse
+    versions:
+    - all
+  - name: FreeBSD
+    versions:
+    - all
+  - name: OpenBSD
+    versions:
+    - all
+  - name: MacOSX
+    versions:
+    - all
+
+  galaxy_tags: []
+
+dependencies: []

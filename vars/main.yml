@@ -1,0 +1,4 @@
+---
+# vars file for eigenbahn.plan9port
+
+plan9port_git_repo: https://github.com/9fans/plan9port

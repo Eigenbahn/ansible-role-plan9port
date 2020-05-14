@@ -1,0 +1,11 @@
+---
+# tasks file for eigenbahn.plan9port
+
+- name: plan9port | installed?
+  shell: command -v rio >/dev/null 2>&1
+  register: plan9port_is_installed
+  ignore_errors: yes
+  changed_when: False
+
+- when: plan9port_is_installed.rc != 0 or plan9port_force_reinstall
+  include: install.yml

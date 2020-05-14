@@ -1,0 +1,10 @@
+---
+# defaults file for eigenbahn.plan9port
+
+plan9port_version: HEAD
+
+plan9port_force_reinstall: no
+
+plan9port_install_location: /usr/local/plan9
+
+plan9port_temp_folder: /tmp

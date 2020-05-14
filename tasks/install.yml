@@ -1,0 +1,19 @@
+---
+# tasks/install file for eigenbahn.plan9port
+
+
+- name: plan9port | get src
+  git:
+    repo: '{{ plan9port_git_repo }}'
+    dest: '{{ plan9port_temp_folder }}/plan9port'
+    version: '{{ plan9port_version }}'
+
+- name: plan9port | build
+  command: ./INSTALL -r {{ plan9port_install_location }}
+  args:
+    chdir: '{{ plan9port_temp_folder }}/plan9port'
+
+- name: plan9port | remove src
+  file:
+    path: '{{ plan9port_temp_folder }}/plan9port'
+    state: absent
